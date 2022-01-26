@@ -52,14 +52,21 @@ namespace HelloWorld
             /* ************************************************************* 
             * Bloco 5º - Entrada de dados
             *           
-            */
-
+            *
             string nome;
 
             Console.WriteLine("Digite seu nome: ");
             nome = Console.ReadLine();
             Console.WriteLine("Seu nome é: " + nome);
+            */
 
+            /* ************************************************************* 
+            * Bloco 6º - Operadores Aritméticos
+            *           
+            */
+
+            int numero = 20 + 40 * 100 + ((10 + 10) * 10)/99 % 10;
+            Console.WriteLine(numero);
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
         }
