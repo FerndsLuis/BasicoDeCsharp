@@ -9,7 +9,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            /* 
+            /* ************************************************************* 
              * Bloco 1º - conceitos básicos de variáveis
              * 
             int segundaGuerraMundial = 1942; //Declarando váriavel do tipo int
@@ -24,7 +24,7 @@ namespace HelloWorld
             Console.WriteLine(segundaGuerrraMundialAconteceu);
             */
 
-            /* 
+            /* ************************************************************* 
             * Bloco 2º - declarando variável sem especificar o tipo
             * 
             *
@@ -32,14 +32,21 @@ namespace HelloWorld
             var modeloDoProduto = 1010; // automáticamente é tipada como int, não pode ser alterada para um string, por exemplo
             */
 
-            /* 
+            /* ************************************************************* 
             * Bloco 3º - declarando variável dinâmica
+            *           
             *
-            */
-
             dynamic cor_favorita = "Vermelho"; // o tipo dela pode ser alterado
             cor_favorita = 10;
             Console.WriteLine(cor_favorita);
+            */
+
+            /* ************************************************************* 
+            * Bloco 4º - Constantes
+            *           
+            */
+            const string SENHA = "TESTESTS@1#"; // valor constante, não pode ser alterado em hipótese alguma - sempre use letra caixa alta
+            Console.WriteLine(SENHA);
 
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
