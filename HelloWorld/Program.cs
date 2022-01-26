@@ -44,9 +44,21 @@ namespace HelloWorld
             /* ************************************************************* 
             * Bloco 4º - Constantes
             *           
-            */
+            *
             const string SENHA = "TESTESTS@1#"; // valor constante, não pode ser alterado em hipótese alguma - sempre use letra caixa alta
             Console.WriteLine(SENHA);
+            */
+
+            /* ************************************************************* 
+            * Bloco 5º - Entrada de dados
+            *           
+            */
+
+            string nome;
+
+            Console.WriteLine("Digite seu nome: ");
+            nome = Console.ReadLine();
+            Console.WriteLine("Seu nome é: " + nome);
 
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
