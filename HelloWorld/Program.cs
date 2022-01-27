@@ -63,10 +63,69 @@ namespace HelloWorld
             /* ************************************************************* 
             * Bloco 6º - Operadores Aritméticos
             *           
+            *
+            int numero = 20 + 40 * 100 + ((10 + 10) * 10)/99 % 10; //cuidado com números decimais
+            Console.WriteLine(numero);
             */
 
-            int numero = 20 + 40 * 100 + ((10 + 10) * 10)/99 % 10;
-            Console.WriteLine(numero);
+            /* ************************************************************* 
+            * Bloco 7º - Condicionais
+            *           
+            *
+            int a = 10;
+            int b = 20;
+            int c = 2;
+
+            if(a > b)
+            {
+                Console.WriteLine("é verdade");
+            }
+            else if(a > c)
+            {
+                Console.WriteLine("Executou else if");
+            }
+            else
+            {
+                Console.WriteLine("Executou else");
+            }
+            */
+
+            /* ************************************************************* 
+            * Bloco 7.1º - Exercicios
+            * 
+            * Crie um Programa em C# que receba três números do usuário, informe na tela qual
+            * é o MENOR deles ou exiba se eles são iguais.
+            * 
+            *  Crie um Programa em C# que receba três números do usuário, informe na tela qual
+            * é o MAIOR deles ou exiba se eles são iguais.
+            *
+            BlocoSeteExercicio ex = new BlocoSeteExercicio();
+
+            Console.WriteLine("Digite o número A: ");
+            ex.numeroA = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o número B: ");
+            ex.numeroB = int.Parse(Console.ReadLine()); 
+            Console.WriteLine("Digite o número C: ");
+            ex.numeroC = int.Parse(Console.ReadLine());
+            ex.menorNumero();
+            ex.maiorNumero();
+            */
+
+            /*
+            Guilherme é chefe do setor de T.I de sua empresa e precisa que você ajude-o a
+            criar um programa usando a linguagem C# que receba os chamados dos usuários
+            classificando e exibindo na tela o seu nível de urgência, sendo de 0-3 "BAIXO", maior
+            que 3 até 6 "MÉDIO", maior que 6 até 9 "ALTO", para os demais casos é considerado
+            "GRAVE".
+           */
+            BlocoSeteExercicio ex = new BlocoSeteExercicio();
+
+            Console.WriteLine("Por favor, digite o nível de urgência:");
+            Console.WriteLine("sendo de 0 - 3 'BAIXO''\n, maior que 3 até 6 'MÉDIO'\n, maior que 6 até 9 'ALTO'\n, para os demais casos é considerado 'GRAVE'");
+            ex.urgencia = int.Parse(Console.ReadLine());
+            ex.chanadosTi();
+
+
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
         }
