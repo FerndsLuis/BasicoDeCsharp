@@ -117,17 +117,50 @@ namespace HelloWorld
             classificando e exibindo na tela o seu nível de urgência, sendo de 0-3 "BAIXO", maior
             que 3 até 6 "MÉDIO", maior que 6 até 9 "ALTO", para os demais casos é considerado
             "GRAVE".
-           */
+           *
             BlocoSeteExercicio ex = new BlocoSeteExercicio();
 
             Console.WriteLine("Por favor, digite o nível de urgência:");
             Console.WriteLine("sendo de 0 - 3 'BAIXO''\n, maior que 3 até 6 'MÉDIO'\n, maior que 6 até 9 'ALTO'\n, para os demais casos é considerado 'GRAVE'");
             ex.urgencia = int.Parse(Console.ReadLine());
             ex.chanadosTi();
+            */
+
+            /* ************************************************************* 
+            * Bloco 9º - Operadores lógicos
+            * 
+            */
+
+           
+            bool repeti = false;
+            do
+            {
+                Console.WriteLine("Digite sua idade:");
+                int idade = int.Parse(Console.ReadLine());
+
+                if (idade >= 0 && idade <= 11)
+                {
+                    Console.WriteLine("Você é uma criança.");
+                }
+                else if (idade >= 12 && idade <= 18)
+                {
+                    Console.WriteLine("Você é um adolescente");
+                }
+                else if (idade >= 19 && idade <= 60)
+                {
+                    Console.WriteLine("Você é um adulto");
+                }
+                else
+                {
+                    Console.WriteLine("Você é um idoso");
+                }
+
+                Console.WriteLine("Nova pergunta? 1-SIM 2-NÂO");
+                repeti = int.Parse(Console.ReadLine()) == 1 ? true : false;
+            } while (repeti != false);
 
 
-
-            Console.ReadLine(); //para o console não fechar ao fim da execução 
+           Console.ReadLine(); //para o console não fechar ao fim da execução 
         }
     }
 }
