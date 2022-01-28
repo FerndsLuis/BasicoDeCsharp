@@ -161,8 +161,8 @@ namespace HelloWorld
             /* ************************************************************* 
             * Bloco 9º - Funções
             * 
-            */
-
+            *
+            *
             primeiraFuncao();
             gerarPreco(10, 20);
 
@@ -175,6 +175,36 @@ namespace HelloWorld
             {
                 Console.WriteLine("A soma é: " + (n1 + n2));
             }
+            */
+
+            /* ************************************************************* 
+            * Bloco 10º - Funções com retorno
+            * 
+            */
+
+            Console.WriteLine("Qual seu salário: ");
+            float salarioBase = float.Parse(Console.ReadLine());
+            Console.WriteLine("Desconto do INSS: " + valorInss(salarioBase));
+
+
+
+            float valorInss(float salario)
+            {
+                float taxa = 0;
+                float valorFinal = 0;
+
+                if (salario <= 1212) taxa = 7.5f;
+                if (salario > 1212 && salario <= 2427) taxa = 9f;
+                if (salario > 2427 && salario <= 3641) taxa = 12f;
+                if (salario > 3641) taxa = 14f;
+
+                valorFinal = (salario * taxa)/100;
+
+                return valorFinal;
+            }
+
+
+
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
         }
