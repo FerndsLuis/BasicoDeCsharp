@@ -127,11 +127,9 @@ namespace HelloWorld
             */
 
             /* ************************************************************* 
-            * Bloco 9º - Operadores lógicos
+            * Bloco 8º - Operadores lógicos
             * 
-            */
-
-           
+            *          
             bool repeti = false;
             do
             {
@@ -158,9 +156,27 @@ namespace HelloWorld
                 Console.WriteLine("Nova pergunta? 1-SIM 2-NÂO");
                 repeti = int.Parse(Console.ReadLine()) == 1 ? true : false;
             } while (repeti != false);
+            */
 
+            /* ************************************************************* 
+            * Bloco 9º - Funções
+            * 
+            */
 
-           Console.ReadLine(); //para o console não fechar ao fim da execução 
+            primeiraFuncao();
+            gerarPreco(10, 20);
+
+            void primeiraFuncao()
+            {
+                Console.WriteLine("Utilizando a função");
+            }
+
+            void gerarPreco(int n1, int n2) //função com parâmetro
+            {
+                Console.WriteLine("A soma é: " + (n1 + n2));
+            }
+
+            Console.ReadLine(); //para o console não fechar ao fim da execução 
         }
     }
 }
