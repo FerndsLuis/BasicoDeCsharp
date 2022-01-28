@@ -180,13 +180,11 @@ namespace HelloWorld
             /* ************************************************************* 
             * Bloco 10º - Funções com retorno
             * 
-            */
+            *
 
             Console.WriteLine("Qual seu salário: ");
             float salarioBase = float.Parse(Console.ReadLine());
             Console.WriteLine("Desconto do INSS: " + valorInss(salarioBase));
-
-
 
             float valorInss(float salario)
             {
@@ -202,8 +200,54 @@ namespace HelloWorld
 
                 return valorFinal;
             }
+            */
+
+            /* ************************************************************* 
+           * Bloco 10.1º - Funções com retorno
+           * 1- Crie um programa em C# que utilize uma Função chamada “ PrecoFinal ” que
+                ajuste em 25% a mais do valor inicial dos produtos:
+                ● Chocolate: 30
+                ● Refrigerante: 50
+                ● Bolo: 45
+                ● Sorvete: 60
+                ● Pão: 15
+           * 
+           *
+            precoFinal(10);
+            void precoFinal(int preco)
+            {
+                Console.WriteLine("Preço inicial: "+ preco + " final: " + (preco + (preco * 0.25)));
+            }
+
+            *
+             * 2- Paulo é um pizzaiolo que precisa descobrir a área de uma circunferência para
+               conseguir fazer a pizza perfeita e ganhar o concurso nacional, Crie um programa C#
+               fazendo o uso das funções, que calcule a área de um círculo, recebendo o raio valor
+               30 desejado por Paulo.
+             *
+
+            calcularRaio();
+
+            void calcularRaio()
+            {
+                float raioDoCirculo = 30f;
+                Console.WriteLine(Math.PI * (raioDoCirculo * raioDoCirculo));
+            }
+
+           *
+             * 3- Alguns engenheiros precisam construir uma praça em um terreno que tem
+                formato Triangular, porém precisam saber qual a área exata desse terreno, Crie um
+                programa em C# com uma função que calcule a área de um triângulo, recebendo
+                uma base de 250 e uma altura de 350 como parâmetros.
+            */
 
 
+            Console.WriteLine("Area do triangulo é: " + areaDoTriangulo(250, 350));           
+
+            float areaDoTriangulo(int baseTriangulo, int alturaTriangulo)
+            {
+                return (baseTriangulo * alturaTriangulo) / 2;
+            }
 
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
