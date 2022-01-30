@@ -239,7 +239,7 @@ namespace HelloWorld
                 formato Triangular, porém precisam saber qual a área exata desse terreno, Crie um
                 programa em C# com uma função que calcule a área de um triângulo, recebendo
                 uma base de 250 e uma altura de 350 como parâmetros.
-            */
+            *
 
 
             Console.WriteLine("Area do triangulo é: " + areaDoTriangulo(250, 350));           
@@ -248,6 +248,19 @@ namespace HelloWorld
             {
                 return (baseTriangulo * alturaTriangulo) / 2;
             }
+
+            */
+
+            /* ************************************************************* 
+            * Bloco 11º - Arrays
+            */
+
+            //não pode mudar o tamanho do array
+            string[] produtos = new string[5] {"Fifa","GTA IV","Minicrafit","Need For speed","Portal"}; 
+            Console.WriteLine(produtos[4]);
+
+            int[] valores = { 10, 20, 40, 100 }; //maneira simples de declarar um array
+            
 
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
