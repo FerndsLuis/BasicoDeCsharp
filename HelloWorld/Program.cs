@@ -8,6 +8,7 @@ namespace HelloWorld
     class Program
     {
         enum Cor { AZUL, VERDE, AMARELO }
+        enum Opcao { Criar = 1, Deletar, Editar, Listar, Atualizar }
 
         static void Main(string[] args)
         {
@@ -295,7 +296,7 @@ namespace HelloWorld
             * 
             * Cria um novo tipo de dado e define os valores
             * Valores limitado de dados
-            */
+            *
 
             Cor corFavorita = Cor.AMARELO;
             Cor corDoZe = Cor.AZUL;
@@ -303,10 +304,43 @@ namespace HelloWorld
             Console.WriteLine(corFavorita);
             Console.WriteLine((int)corDoZe);
             Console.WriteLine((Cor)2);
+            */
 
 
+            /* ************************************************************* 
+            * Bloco 14º - Enum e Switch para menu
+            * 
+            * 
+            */
+    
+            Console.WriteLine("Selecione uma da opções:");
+            Console.WriteLine(" 1-Criar\n 2-Deletar\n 3-Editar\n 4-Listar\n 5-Atualizar");
+            int index = int.Parse(Console.ReadLine());
+            Opcao opcaoSelecionada = (Opcao)index;
 
+            //Console.WriteLine(opcaoSelecionada);
 
+            switch(opcaoSelecionada)
+            {
+                case Opcao.Criar:
+                    Console.WriteLine("Opção criar");
+                    break;
+                case Opcao.Deletar:
+                    Console.WriteLine("Opção Deletar");
+                    break;
+                case Opcao.Editar:
+                    Console.WriteLine("Opção Editar");
+                    break;
+                case Opcao.Listar:
+                    Console.WriteLine("Opção Listar");
+                    break;
+                case Opcao.Atualizar:
+                    Console.WriteLine("Opção Atualizar");
+                    break;
+                default:
+                    Console.WriteLine("Opção inválida");
+                    break;
+            }
 
 
 
