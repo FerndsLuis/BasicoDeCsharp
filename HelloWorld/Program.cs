@@ -7,6 +7,8 @@ namespace HelloWorld
 {
     class Program
     {
+        enum Cor { AZUL, VERDE, AMARELO }
+
         static void Main(string[] args)
         {
             /* ************************************************************* 
@@ -265,9 +267,9 @@ namespace HelloWorld
 
             /* ************************************************************* 
             * Bloco 12º - Switch
-            * 
-            * Muit útil para menus
-            */
+            * Só realiza operações de igualdade
+            * Muito útil para menus
+            *
 
             string cor = "azul";
 
@@ -286,6 +288,26 @@ namespace HelloWorld
                     Console.WriteLine("Cor não encontrada");
                     break;
             }
+            */
+
+            /* ************************************************************* 
+            * Bloco 13º - Enum
+            * 
+            * Cria um novo tipo de dado e define os valores
+            * Valores limitado de dados
+            */
+
+            Cor corFavorita = Cor.AMARELO;
+            Cor corDoZe = Cor.AZUL;
+
+            Console.WriteLine(corFavorita);
+            Console.WriteLine((int)corDoZe);
+            Console.WriteLine((Cor)2);
+
+
+
+
+
 
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
