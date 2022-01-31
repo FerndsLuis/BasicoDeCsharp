@@ -365,7 +365,7 @@ namespace HelloWorld
            * Bloco 16º - Do While
            * 
            * Vai executar ao menos uma vez
-           */
+           *
             int contador = 4;
 
             do
@@ -374,7 +374,21 @@ namespace HelloWorld
                 contador++;
             }
             while (contador < 5);
+            */
 
+
+            /* ************************************************************* 
+            * Bloco 17º - For Each
+            * 
+            * serve para percorrer array*
+            */
+
+            string[] cursos = { "C#", "POO", "SQL", "GIT", "GITHUB" };
+
+            foreach(string curso in cursos)
+            {
+                Console.WriteLine(curso);
+            }
 
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
