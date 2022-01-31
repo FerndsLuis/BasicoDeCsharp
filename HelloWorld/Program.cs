@@ -381,13 +381,34 @@ namespace HelloWorld
             * Bloco 17º - For Each
             * 
             * serve para percorrer array*
-            */
+            * foreach = para cada
+            *
 
             string[] cursos = { "C#", "POO", "SQL", "GIT", "GITHUB" };
 
             foreach(string curso in cursos)
             {
                 Console.WriteLine(curso);
+            }
+            */
+
+            /* ************************************************************* 
+            * Bloco 18º - For
+            *             
+            */
+
+            string[] cursos = { "C#", "POO", "SQL", "GIT", "GITHUB" };
+
+            for(int contador = 0; contador < cursos.Length; contador++)//crescente
+            {
+                Console.WriteLine(cursos[contador]);
+            }
+
+            Console.WriteLine("--");
+
+            for (int contador = cursos.Length; contador > 0; contador--)//decrescente
+            {
+                Console.WriteLine(cursos[contador-1]);
             }
 
 
