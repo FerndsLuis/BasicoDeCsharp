@@ -311,7 +311,7 @@ namespace HelloWorld
             * Bloco 14º - Enum e Switch para menu
             * 
             * 
-            */
+            *
     
             Console.WriteLine("Selecione uma da opções:");
             Console.WriteLine(" 1-Criar\n 2-Deletar\n 3-Editar\n 4-Listar\n 5-Atualizar");
@@ -341,7 +341,22 @@ namespace HelloWorld
                     Console.WriteLine("Opção inválida");
                     break;
             }
+            */
 
+
+
+            /* ************************************************************* 
+            * Bloco 15º - While
+            * 
+            */
+
+            int contador = 0;
+
+            while(contador < 10)
+            {
+                Console.WriteLine(contador);
+                contador++;
+            }
 
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
