@@ -253,14 +253,39 @@ namespace HelloWorld
 
             /* ************************************************************* 
             * Bloco 11º - Arrays
-            */
+            *
 
             //não pode mudar o tamanho do array
             string[] produtos = new string[5] {"Fifa","GTA IV","Minicrafit","Need For speed","Portal"}; 
             Console.WriteLine(produtos[4]);
 
             int[] valores = { 10, 20, 40, 100 }; //maneira simples de declarar um array
-            
+            */
+
+
+            /* ************************************************************* 
+            * Bloco 12º - Switch
+            * 
+            * Muit útil para menus
+            */
+
+            string cor = "azul";
+
+            switch (cor) 
+            {
+                case "vermelho":
+                    Console.WriteLine("Sua cor favorita é vermelho");
+                    break;
+                case "amarelo":
+                    Console.WriteLine("Sua cor favorita é amarelo");
+                    break;
+                case "azul":
+                    Console.WriteLine("Sua cor favorita é azul");
+                    break;
+                default:
+                    Console.WriteLine("Cor não encontrada");
+                    break;
+            }
 
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
