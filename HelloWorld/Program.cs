@@ -348,7 +348,8 @@ namespace HelloWorld
             /* ************************************************************* 
             * Bloco 15º - While
             * 
-            */
+            * Enquanto for verdade, então faça.
+            *
 
             int contador = 0;
 
@@ -357,6 +358,23 @@ namespace HelloWorld
                 Console.WriteLine(contador);
                 contador++;
             }
+            */
+
+
+            /* ************************************************************* 
+           * Bloco 16º - Do While
+           * 
+           * Vai executar ao menos uma vez
+           */
+            int contador = 4;
+
+            do
+            {
+                Console.WriteLine("Contador");
+                contador++;
+            }
+            while (contador < 5);
+
 
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
