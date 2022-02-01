@@ -395,8 +395,8 @@ namespace HelloWorld
             /* ************************************************************* 
             * Bloco 18º - For
             *             
-            */
-
+            *
+            *
             string[] cursos = { "C#", "POO", "SQL", "GIT", "GITHUB" };
 
             for(int contador = 0; contador < cursos.Length; contador++)//crescente
@@ -410,6 +410,120 @@ namespace HelloWorld
             {
                 Console.WriteLine(cursos[contador-1]);
             }
+            */
+
+
+            /* ************************************************************* 
+            * Bloco 19º - Escopo
+            *             
+            *
+
+            void exibiNome()
+            {
+                string nome = "Luís";
+                Console.WriteLine(nome); //escopo local
+            }
+
+            Console.WriteLine(nome); //teremos um erro pois a variável nome está no escopo local exibirNome.
+            */
+
+
+            /* ************************************************************* 
+            * Bloco 19.1º - Exercícios
+            *             
+            */
+
+
+
+
+            /*
+             * 1. A diretora de uma escola precisa de um programa C# que exiba uma mensagem de
+                  boas vindas para os 10 alunos novos, utilizando a estrutura Foreach exiba a mesma
+                  mensagem para todos os alunos novos
+            *
+
+            string[] alunos = { "Marcos", "Luis", "Julio", "Vinicius", "Felipe", "Ana", "Carla", "Patricia", "Joice", "Rafaela" };
+
+            foreach(string aluno in alunos)
+            {
+                Console.WriteLine("Seja bem-vindo (a) " + aluno);
+            }
+            */
+
+
+
+
+            /*
+             * 2. Crie um programa C# usando as estruturas de repetição que contabilize a
+                  velocidade de um carro de fórmula 1, sem ultrapassar o limite de 200 Km/h permitido
+                  na pista, exiba uma mensagem no final informando que chegou no limite
+            *
+
+            for (int velodiade = 0; velodiade <= 200; velodiade++)
+            {
+                if (velodiade == 200) { Console.WriteLine("Chegou no limite de 200km/h"); break; }
+                Console.WriteLine("Sua velocidade é: " + velodiade + "km/h");                
+            }
+            */
+
+
+
+            /*
+             * 3. Crie um programa C# que exiba para os clientes de um mercado que está aberto
+                  sob a condição do seu horário de funcionamento das 7h às 17h após esse horário
+                  exibir uma mensagem de que se encontra fechado e indicando o horário de
+                  funcionamento deste estabelecimento
+            *
+
+            int hora = 0;
+
+            while(hora <= 23)
+            {
+                if(hora >= 7 && hora <= 17)
+                {
+                    Console.WriteLine("Mercado aberto: " + hora + ":00");
+                }
+                else
+                {
+                    Console.WriteLine("O mercado está fechado! " + hora + ":00");
+                    Console.WriteLine("Horário de funcionamento de 7h até as 17h");
+                }
+
+                hora++;
+            }
+            */
+
+
+
+
+            /*
+            *4. Crie um programa C# que exiba um cardápio de uma pizzaria contando 10 sabores
+                de pizza, exiba na tela repetindo a frase : “ Temos o sabor: ” “Aproveite a refeição”
+                nos 10 sabores.
+            *
+
+            string[] cardpaio = { "1) Calabresa", "2) Portuguesa.", "3) Marguerita.", "4) Frango com catupiry.", "5) Muçarela.", "6) Napolitana. ", "7) Brigadeiro.", "8) Romeu e Julieta.", "9) Pão de alho", "10) Carne seca" };
+
+            foreach(string item in cardpaio)
+            {
+                Console.WriteLine("Temos o sabor: "+ item +", Aproveite a refeição");
+            }
+            */
+
+
+
+
+
+            /*
+            *5. Utilizando as estruturas de repetição, crie um programa C# que Realize uma
+                Contagem regressiva de 1000 a 1 para que um foguete seja lançado ao espaço.
+            *
+            for(int numero = 1000; numero > 0; numero--)
+            {
+                Console.WriteLine(numero);
+            }
+            */
+
 
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
