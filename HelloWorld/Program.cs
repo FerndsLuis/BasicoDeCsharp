@@ -16,9 +16,12 @@ namespace HelloWorld
             //l.Logica();
             //l.ExerciciosRepeticao();
 
-            CalculadoraCMD ca = new CalculadoraCMD();
-            ca.Calcular();
 
+            //CalculadoraCMD ca = new CalculadoraCMD();
+            //ca.Calcular();
+
+            DesenvolvendoStructs d = new DesenvolvendoStructs();
+            d.TrabalhandoComStruct();
 
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
