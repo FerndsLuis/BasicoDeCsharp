@@ -46,6 +46,7 @@
     <Compile Include="BlocoSeteExercicio.cs" />
     <Compile Include="CalculadoraCMD.cs" />
     <Compile Include="DesenvolvendoStructs.cs" />
+    <Compile Include="Listas.cs" />
     <Compile Include="LogicaProgramacao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -20,8 +20,11 @@ namespace HelloWorld
             //CalculadoraCMD ca = new CalculadoraCMD();
             //ca.Calcular();
 
-            DesenvolvendoStructs d = new DesenvolvendoStructs();
-            d.TrabalhandoComStruct();
+            //DesenvolvendoStructs d = new DesenvolvendoStructs();
+            //d.TrabalhandoComStruct();
+
+            Listas l = new Listas();
+            l.ListasLinq();
 
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
