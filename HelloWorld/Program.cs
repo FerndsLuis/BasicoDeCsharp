@@ -23,8 +23,13 @@ namespace HelloWorld
             //DesenvolvendoStructs d = new DesenvolvendoStructs();
             //d.TrabalhandoComStruct();
 
-            Listas l = new Listas();
-            l.ListasLinq();
+            //Listas l = new Listas();
+            //l.ListasLinq();
+
+            ManipulandoArquivo ar = new ManipulandoArquivo();
+            //ar.GerandoArquivo();
+            //ar.LendoArquivo();
+            ar.ArquivoBinario();
 
 
             Console.ReadLine(); //para o console não fechar ao fim da execução 
